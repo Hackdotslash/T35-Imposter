@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -29,6 +30,13 @@ const bloodBankSchema={
 const contactSchema={
   name: String,
   email: String,
+  number: Number,
+  bloodgroup: String
+};
+
+const requestSchema={
+  name: String,
+  email: String,
   suggestions: String
 };
 
@@ -39,7 +47,8 @@ const contactSchema={
 /**************Collections****************/
 const subscribe = mongoose.model("subscribe",subscribeSchema);
 const contact = mongoose.model("contact",contactSchema);
-
+const bloodBank = mongoose.model("bloodbank",bloodBankSchema);
+const request = mongoose.model("request",requestSchema);
 
 
 
@@ -48,12 +57,11 @@ app.get("/",(req,res)=>{
 	res.render("home");
 });
 
-app.get("/request",(req,res)=>{
-	res.render("request");
-});
-
 app.get("/register",(req,res)=>{
-	res.render("register");
+	res.render("register",{
+		stat: "none",
+		id:0
+	});
 });
 
 app.get("/banks",(req,res)=>{
@@ -62,6 +70,12 @@ app.get("/banks",(req,res)=>{
 
 app.get("/about",(req,res)=>{
 	res.render("about");
+});
+
+app.get("/request",(req,res)=>{
+	res.render("request",{
+		stat: "none"
+	});
 });
 
 /************************POST REQUESTS*******************/
@@ -84,8 +98,34 @@ app.post("/contact",(req,res)=>{
 	res.redirect("/about");
 });
 
+app.post("/register",(req,res)=>{
+	const details=new bloodBank({
+		name: req.body.orgName,
+  		email: req.body.email,
+  		address: req.body.address,
+  		country: req.body.country,
+  		state: req.body.state,
+  		pincode:req.body.pincode
+	});
+	details.save();
+	res.render("register",{
+		stat: "block",
+		id:details._id
+	});
+});
 
-
+app.post("/request",(req,res)=>{
+	const details = new contact({
+		name: req.body.name,
+  		email: req.body.email,
+  		number:req.body.number ,
+  		bloodgroup: req.body.bloodgroup
+	});
+	details.save();
+	res.render("request",{
+		stat: "block"
+	});
+});
 
 
 
