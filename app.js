@@ -26,20 +26,26 @@ const bloodBankSchema={
   pincode: Number
 };
 
+const contactSchema={
+  name: String,
+  email: String,
+  suggestions: String
+};
+
 
 
 
 
 /**************Collections****************/
 const subscribe = mongoose.model("subscribe",subscribeSchema);
-
+const contact = mongoose.model("contact",contactSchema);
 
 
 
 
 /*****************************GET REQUESTS****************************/
 app.get("/",(req,res)=>{
-	res.render("request");
+	res.render("home");
 });
 
 app.get("/request",(req,res)=>{
@@ -66,6 +72,16 @@ app.post("/subscribe",(req,res)=>{
 	});
 	eid.save();
 	res.redirect("/");
+});
+
+app.post("/contact",(req,res)=>{
+	const details = new contact({
+		name: req.body.name,
+  		email: req.body.email,
+  		suggestions: req.body.suggestions
+	});
+	details.save();
+	res.redirect("/about");
 });
 
 
