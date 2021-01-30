@@ -17,19 +17,19 @@
     </div>
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Details</h4><hr>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" novalidate method="post" action="/bloodbank">
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for="orgName" class="form-label">Hospital Name</label>
-              <input type="text" class="form-control" id="orgName" placeholder="Enter Name" required>
+              <label for="orgName" class="form-label">Blood Bank  Name</label>
+              <input type="text" class="form-control" id="orgName" placeholder="Enter Name" required name="orgName">
               <div class="invalid-feedback">
                 Valid name is required.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Hospital Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <label for="email" class="form-label">Blood Bank Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required name="email">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -37,7 +37,7 @@
 
             <div class="col-12">
               <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required name="address">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
@@ -45,9 +45,9 @@
 
             <div class="col-md-5">
               <label for="country" class="form-label">Country</label>
-              <select class="form-select" id="country" required>
-                <option value="">Choose...</option>
-                <option>India</option>
+              <select class="form-select" id="country" required name="country">
+                <option>Choose...</option>
+                <option value="India">India</option>
               </select>
               <div class="invalid-feedback">
                 Please select a valid country.
@@ -56,9 +56,9 @@
 
             <div class="col-md-4">
               <label for="state" class="form-label">State</label>
-              <select class="form-select" id="state" required>
-                <option value="">Choose...</option>
-                <option>Gujarat</option>
+              <select class="form-select" id="state" required name="state">
+                <option >Choose...</option>
+                <option value="Gujarat">Gujarat</option>
                 <option disabled>Rajasthan</option>
                 <option disabled>Goa</option>
               </select>
@@ -69,7 +69,7 @@
 
             <div class="col-md-3">
               <label for="zip" class="form-label">Pin</label>
-              <input type="number" class="form-control" id="zip" placeholder="Pincode" required min="100000" max="999999">
+              <input type="number" class="form-control" id="zip" placeholder="Pincode" required min="100000" max="999999" name="pincode">
               <div class="invalid-feedback">
                 Pincode code required.
               </div>
