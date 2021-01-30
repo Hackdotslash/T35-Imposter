@@ -111,8 +111,8 @@ transition: all 250ms ease-in-out 0s;
     margin: auto;
 }
 
-input[type="email"] {
-    background: rgba(255,255,255,0.075);
+input,textarea {
+    background: white;
     padding: 10px 15px;
     color: #aaa;
     border: 3px solid rgba(0,0,0,0.1);
@@ -125,7 +125,7 @@ input[type="email"] {
     width: 100%;
 }
 
-input.submitbutton.ripplelink {
+input.submitbutton.ripplelink,.buttony {
     background:#8A0707;
     border: 3px solid rgba(0,0,0,0.1);
     color: #fff;
@@ -140,6 +140,7 @@ input.submitbutton.ripplelink {
     padding: 10px 15px;
     margin-bottom: 16px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .thumb-content ::before {
