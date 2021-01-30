@@ -78,6 +78,10 @@ app.get("/request",(req,res)=>{
 	});
 });
 
+app.get("/:bankId", function(req,res){
+	res.render("patient");
+});
+
 /************************POST REQUESTS*******************/
 app.post("/subscribe",(req,res)=>{
 
@@ -124,6 +128,23 @@ app.post("/request",(req,res)=>{
 	details.save();
 	res.render("request",{
 		stat: "block"
+	});
+});
+
+app.post("/banklogin",(req,res)=>{
+	const bankId=req.body.bankid;
+
+	bloodBank.findOne({_id:bankId},function(err,found){
+		if (!err) {
+			if(!found){
+				res.send("Not Found, Error. Please register first");
+			}else{
+				res.redirect("/id="+bankId);
+			}
+		}else{
+			console.log(err);
+			res.redirect("/");
+		}
 	});
 });
 
