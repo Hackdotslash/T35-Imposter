@@ -1,10 +1,14 @@
 # T35-Imposter
 Official Repository for DotSlash 4.0 Submission of Team 35: Imposter
 
-# Rapid Red :drop_of_blood::hospital:
-Facing difficulties in finding blood when needed and not able to ask a group of people without making a dozen calls?:cry:Willing to donate blood but don't want it to get wasted and really want to help?:cry:Then this site will help you to find donor as well as reciever.:star_struck:.
-If you want to contact a nearby bloodbank you can find their contact info also.
+# Rapid Red 
+# Introduction:drop_of_blood::hospital:
+This Web-App is Based on the Theme 'Rural Health Development'.<br>
+Considering people in the Rural Areas do not have much access to Internet facility and might also not have an E-mail ID so considering all these factors our Web-App provides the best for them.<br>
+We have created a Simple Application which reduces complexity as much as possible so that people can make blood request when Urgent without any tedious operation.<br>
+Considering People in Rural areas will not keep a track of verification from the Blood Bank once requested the Blood Bank will take people's Data from our Web-App and Contact them Them.<br>
+Every Registerd Blood Bank will be provided with a Unique ID which they will use to Access all the Requests. This is Done so that no leman can access Any patient's info. <br>
 
-# How it works :thinking:
-If you need blood, then just fill out a form with relevant information and after that donors and blood banks will contact you themselves.
-Blood banks are registered here, so you can even find their contact info if needed.
+# How it works :thinking:?
+
+
