@@ -18,13 +18,13 @@ This is the registration form for Blood Banks providing their relevant informati
 <img src="refer/register.png">
 <br><br>After registering on the site, a unique ID is generated for every Blood Bank which is confidential and can be used to view the requests in the _Search Bar_ provided on the __HOME__ page.<br><br>
 <img src="refer/bloodBankId.png"><br>
-After successfully registering on the page the information of the Blood Bank is displayed on the Web page which can be further used by the patients and donors.<br><br>
+After successfully registering on the page the information of the Blood Bank is automatically added on the Web page associted with the 'bank' link which can be viewed by anybody who visits thw webpage. This page gives a list of all banks registered to our website.<br><br>
 <img src="refer/banksRegistered.png"><br>
 
 ## Registration Page for Blood Request :pencil:
 This is a request form page for the patients who need blood of a particular group. We have kept thr form simple keeping in mind that the people in rural areas are not very techno savy.<br><br>
 <img src="refer/patientForm.png">
-<br><br>Blood Banks can view the requests of blood raised the the individuals by entering their unique id that was provided to them during registration in the input field in the nav bar. If the id is wrong or not present they wont we able to see the blood requests. Also a random person cannot get access to the request and hence the patient info like their number as for every bank id, a unique url is created using Express js.<br><br>
+<br><br>Blood Banks can view the requests of blood raised the the individuals by entering their unique id that was provided to them during registration in the input field in the nav bar. If the id is wrong or not present they wont we able to see the blood requests. Also a random person cannot get access to the request and hence the patient info like their number as for every bank id, a unique url is created using Express js.<br><br> Each patient request for blood is automatically removed from the database after two days, to keep it clean and updated. <br><br>
 <img src="refer/patientinfo.png"><br>
 
 ## Contact Us :e-mail:
