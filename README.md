@@ -15,7 +15,7 @@ Every Registerd Blood Bank will be provided with a Unique ID which they will use
 
 # How it works :thinking:?
 ## Registration Page For Blood Banks 
-This is the registration form for Blood Banks providing their Relevant Information.<br><br>
+We have provided a Registration form for Blood Banks asking their Relevant Information.<br><br>
 <img src="refer/register.png">
-<br><br>After registering on the Page, Unique ID is generated for every Blood Bank and it can be used to search for that Blood Bank in the _Search Bar_ provided on the __HOME__ page.
+<br><br>After registering on this Page,a Unique ID is generated for every Blood Bank and it can be used to search for that Blood Bank in the _Search Bar_ provided on the __HOME__ page.
 
