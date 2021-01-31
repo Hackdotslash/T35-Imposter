@@ -38,6 +38,23 @@ width:16%;
 <body><br>
 
     <!--------------Header Ends----------------------->
+     <!------Horizontal Card----------------->
+  <% for(var i=0; i< bloodBank.length; i++) {%>
+  <main class="container">
+  	<div class="shadow lg-3 mb-5 bg-white rounded">
+		<div class="card" style="padding:20px">
+  			<h5 class="card-header">Bank Deatils</h5>
+  			<div class="card-body">
+  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5MKxuKS3lUNnnzMWw1oBakhAVq-KLHbkEOH5zp15Mc75kYo&s"  align="right" class="me">
+    		<h5 class="card-title">Name:<%= bloodBank[i].name %> </h5>
+    		<p class="card-text">Email:<%= bloodemail[i].name %><br>Address:<%= bloodBank[i].address %><br>State: <%= bloodBank[i].state %><br>Country: <%= bloodBank[i].country %><br>Pin:<%= bloodBank[i].pincode %></p>
+		</div>
+  </div>
+</div>
+</main>
+<% } %>
+<!---------------Horizontal Card Ends------------->
+
 
   <!------Horizontal Card----------------->
   <main class="container">
