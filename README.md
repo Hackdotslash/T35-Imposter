@@ -22,9 +22,9 @@ After successfully registering on the page the information of the Blood Bank is 
 <img src="refer/banksRegistered.png"><br>
 
 ## Registration Page for Blood Request :pencil:
-This is a request for the patients who need blood of a particular group.<br><br>
+This is a request form page for the patients who need blood of a particular group. We have kept thr form simple keeping in mind that the people in rural areas are not very techno savy.<br><br>
 <img src="refer/patientForm.png">
-<br><br>Blood Banks can view the requests by using their unique ID provided at the time of registration.<br><br>
+<br><br>Blood Banks can view the requests of blood raised the the individuals by entering their unique id that was provided to them during registration in the input field in the nav bar. If the id is wrong or not present they wont we able to see the blood requests. Also a random person cannot get access to the request and hence the patient info like their number as for every bank id, a unique url is created using Express js.<br><br>
 <img src="refer/patientinfo.png"><br>
 
 ## Contact Us :e-mail:
