@@ -38,6 +38,7 @@ const requestSchema={
   email: String,
   number: Number,
   bloodgroup: String,
+  date:Date,
   createdAt: { type: Date, expires: '2880m', default: Date.now } //Expires each request after some time
 };
 
@@ -138,11 +139,13 @@ app.post("/register",(req,res)=>{
 });
 
 app.post("/request",(req,res)=>{
+	const today=new Date();
 	const details = new request({
 		name: req.body.Name,
   		email: req.body.email,
   		number:req.body.number ,
   		bloodgroup: req.body.bloodgroup,
+  		date:today
 	});
 	console.log(details);
 	details.save();
