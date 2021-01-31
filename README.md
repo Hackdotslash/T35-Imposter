@@ -2,6 +2,9 @@
 Official Repository for DotSlash 4.0 Submission of Team 35: Imposter
 
 # Rapid Red 
+This is our official project for Dotslash 4.0<br>
+Contributors:<br>
+Sakshi Jain<br>Himani Verma<br>Riya Sharma
 # Introduction:drop_of_blood::hospital:
 This Web-App is Based on the Theme 'Rural Health Development'.<br><br>
 <img src="refer/home.png">
