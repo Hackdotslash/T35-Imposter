@@ -16,8 +16,8 @@ Every Registerd Blood Bank will be provided with a Unique ID which they will use
 ## Registration Page For Blood Banks :pencil:
 This is the registration form for Blood Banks providing their relevant information.<br><br>
 <img src="refer/register.png">
-<br><br>After registering on the site, a unique ID is generated for every Blood Bank which is confidential and can be used to view the requests in the _Search Bar_ provided on the __HOME__ page.<br>
-
+<br><br>After registering on the site, a unique ID is generated for every Blood Bank which is confidential and can be used to view the requests in the _Search Bar_ provided on the __HOME__ page.<br><br>
+<img src="refer/bloodBankId.png"><br>
 After successfully registering on the page the information of the Blood Bank is displayed on the Web page which can be further used by the patients and donors.<br><br>
 <img src="refer/banksRegistered.png"><br>
 
@@ -25,7 +25,7 @@ After successfully registering on the page the information of the Blood Bank is 
 This is a request for the patients who need blood of a particular group.<br><br>
 <img src="refer/patientForm.png">
 <br><br>Blood Banks can view the requests by using their unique ID provided at the time of registration.<br><br>
-<img src="refer/bloodBankId.png"><br>
+<img src="refer/patientinfo.png"><br>
 
 ## Contact Us :e-mail:
 Suggestions are welcomed and people can send it thorugh the _Contact Us_ form provided.<br><br>
