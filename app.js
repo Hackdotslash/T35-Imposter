@@ -30,14 +30,15 @@ const bloodBankSchema={
 const contactSchema={
   name: String,
   email: String,
-  number: Number,
-  bloodgroup: String
+  suggestions: String
 };
 
 const requestSchema={
   name: String,
   email: String,
-  suggestions: String
+  number: Number,
+  bloodgroup: String,
+  createdAt: { type: Date, expires: '2880m', default: Date.now } //Expires each request after some time
 };
 
 
@@ -49,6 +50,7 @@ const subscribe = mongoose.model("subscribe",subscribeSchema);
 const contact = mongoose.model("contact",contactSchema);
 const bloodBank = mongoose.model("bloodbank",bloodBankSchema);
 const request = mongoose.model("request",requestSchema);
+
 
 
 
@@ -88,7 +90,15 @@ app.get("/request",(req,res)=>{
 });
 
 app.get("/:bankId", function(req,res){
-	res.render("patient");
+	request.find({},(err,findItems)=>{
+		if(!err){
+			if(!findItems){
+				console.log("Not found");
+			}else{
+				res.render("patient",{patients:findItems});
+			}
+		}
+	});
 });
 
 /************************POST REQUESTS*******************/
@@ -129,10 +139,10 @@ app.post("/register",(req,res)=>{
 
 app.post("/request",(req,res)=>{
 	const details = new request({
-		name: req.body.name,
+		name: req.body.Name,
   		email: req.body.email,
   		number:req.body.number ,
-  		bloodgroup: req.body.bloodgroup
+  		bloodgroup: req.body.bloodgroup,
 	});
 	console.log(details);
 	details.save();
