@@ -31,6 +31,23 @@ This is a request form page for the patients who need blood of a particular grou
 Suggestions are welcomed and people can send it thorugh the _Contact Us_ form provided.<br><br>
 <img src="refer/contactForm.png"><br>
 
+# Code Snippets
+## Module Used:
+```
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const mongoose = require("mongoose");
+```
+
+## Tech Stack
+* node.js 
+* express.js
+* javascript
+* Css
+* HTML
+* Mongo db
+
 # Contributors:<br>
 * Sakshi Jain<br>
 * Himani Verma<br>
