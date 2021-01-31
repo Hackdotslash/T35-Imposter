@@ -65,7 +65,16 @@ app.get("/register",(req,res)=>{
 });
 
 app.get("/banks",(req,res)=>{
-	res.render("banks");
+	bloodBank.find({},(err,findItems)=>{
+		if(!err){
+			if(!findItems){
+				console.log("Not found");
+			}else{
+				res.render("banks",{bloodBank:findItems});
+			}
+		}
+	});
+	
 });
 
 app.get("/about",(req,res)=>{
@@ -119,12 +128,13 @@ app.post("/register",(req,res)=>{
 });
 
 app.post("/request",(req,res)=>{
-	const details = new contact({
+	const details = new request({
 		name: req.body.name,
   		email: req.body.email,
   		number:req.body.number ,
   		bloodgroup: req.body.bloodgroup
 	});
+	console.log(details);
 	details.save();
 	res.render("request",{
 		stat: "block"
