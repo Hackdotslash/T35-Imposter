@@ -25,6 +25,7 @@ After successfully registering on the page the information of the Blood Bank is 
 This is a request for the patients who need blood of a particular group.<br><br>
 <img src="refer/patientForm.png">
 <br><br>Blood Banks can view the requests by using their unique ID provided at the time of registration.<br><br>
+<img src="refer/bloodBankId.png"><br>
 
 ## Contact Us :e-mail:
 Suggestions are welcomed and people can send it thorugh the _Contact Us_ form provided.<br><br>
