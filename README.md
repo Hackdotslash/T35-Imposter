@@ -14,5 +14,8 @@ Considering People in Rural areas will not keep a track of verification from the
 Every Registerd Blood Bank will be provided with a Unique ID which they will use to Access all the Requests. This is done so that no leyman can access any patient's information. <br>
 
 # How it works :thinking:?
-
+## Registration Page For Blood Banks 
+This is the registration form for Blood Banks providing their relevant information.<br><br>
+<img src="refer/register.png">
+<br><br>After registering on the site, a unique ID is generated for every Blood Bank and it can be used to search for that Blood Bank in the _Search Bar_ provided on the __HOME__ page.
 
